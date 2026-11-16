@@ -1,143 +1,206 @@
 {
-  "meta": {"count": 10, "updated": "2026-11-16", "currency": "USD"},
+  "meta": {"count": 15, "updated": "2026-11-16", "currency": "USD", "note": "15 confirmed objects; 85+ placeholder regions to be detailed"},
   "objects": {
-    "navoiy-smelter": {
-      "title": "Navoiy Mining & Metallurgy — Uzbekistan",
-      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.08, "lon": 65.38, "status": "red",
-      "claimed": "Modernization and environmental compliance",
-      "actual": "SO₂ emissions, dust, tailings contamination",
-      "gap": "Underreported emissions; legacy tailings",
-      "financial_impact": {"loss_usd": 350000000, "description": "Health and agriculture damage", "formula": "SO₂ + PM damage + remediation"},
+    "norilsk-nickel": {
+      "title": "Norilsk Nickel Smelter — Russia",
+      "country": "Russia", "region": "Europe/Asia", "lat": 69.36, "lon": 88.13, "status": "red",
+      "claimed": "Modernization and environmental programs",
+      "actual": "World's largest SO₂ emitter; 5.9 million acres of dead forest; pollution visible from space",
+      "gap": "Emissions rivaling volcanic activity; continuous for decades",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Ecosystem destruction and health impacts", "formula": "SO₂ damage + forest loss + health"},
       "solutions": [
-        {"name": "Install SO₂ scrubbers", "type": "Fast", "effect": "Reduce SO₂ by 80%", "cost": "$40M"},
-        {"name": "Tailings containment", "type": "Medium", "effect": "Prevent groundwater contamination", "cost": "$80M"}
+        {"name": "Sulfur capture and processing", "type": "Medium", "effect": "Reduce SO₂ by 90%", "cost": "$2B"},
+        {"name": "Forest restoration", "type": "Long", "effect": "Rehabilitate 5.9M acres", "cost": "$500M"}
       ],
-      "sources": ["UNECE", "Sentinel-5P"], "companies": ["Navoiy MMC"],
-      "documents": [{"name": "UNECE Report", "url": "https://unece.org/"}]
+      "sources": ["NASA/Environment Canada monitoring", "Inside Climate News [citation:3]"], "companies": ["Norilsk Nickel"],
+      "documents": [{"name": "Inside Climate News Report", "url": "https://insideclimatenews.org/news/28112021/norilsk-nickel-russia-pollution/"}]
     },
-    "bekabad-cement": {
-      "title": "Bekabad Cement Plant — Uzbekistan",
-      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.22, "lon": 69.33, "status": "red",
-      "claimed": "Modern kilns, low dust",
-      "actual": "PM2.5 and NOx above limits; CO₂ from clinker",
-      "gap": "Underreported PM/NOx",
-      "financial_impact": {"loss_usd": 120000000, "description": "Health and crop damage", "formula": "PM/NOx damage costs"},
+    "bien-hoa-agent-orange": {
+      "title": "Bien Hoa Airbase Dioxin Contamination — Vietnam",
+      "country": "Vietnam", "region": "Asia", "lat": 10.95, "lon": 106.82, "status": "red",
+      "claimed": "Cleanup project initiated (USAID, $183M)",
+      "actual": "Most contaminated site in Vietnam; heavy dioxin from Agent Orange storage (1962–1971)",
+      "gap": "High dioxin levels in blood and local food; cleanup at risk",
+      "financial_impact": {"loss_usd": 500000000, "description": "Health crisis and remediation", "formula": "Dioxin cleanup + health costs"},
       "solutions": [
-        {"name": "Baghouse filters", "type": "Fast", "effect": "Reduce PM by 90%", "cost": "$15M"},
-        {"name": "Alternative fuels (RDF)", "type": "Medium", "effect": "Cut CO₂ by 20%", "cost": "$25M"}
+        {"name": "Thermal desorption", "type": "Medium", "effect": "Destroy dioxin", "cost": "$183M"},
+        {"name": "Health monitoring", "type": "Fast", "effect": "Track exposure", "cost": "$10M"}
       ],
-      "sources": ["Rosprirodnadzor", "Sentinel-5P"], "companies": ["Bekabadcement"],
-      "documents": []
+      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["US Military (legacy)"],
+      "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
-    "karaganda-steel": {
-      "title": "Karaganda Steelworks — Kazakhstan",
-      "country": "Kazakhstan", "region": "Central Asia", "lat": 49.88, "lon": 73.10, "status": "red",
-      "claimed": "Environmental program",
-      "actual": "SO₂, NOx, dust; legacy slag heaps",
-      "gap": "Underreported emissions",
-      "financial_impact": {"loss_usd": 400000000, "description": "Health and soil damage", "formula": "PM/SO₂ damage + remediation"},
+    "accra-e-waste": {
+      "title": "Agbogbloshie E-Waste Scrapyard — Ghana",
+      "country": "Ghana", "region": "Africa", "lat": 5.55, "lon": -0.23, "status": "red",
+      "claimed": "Informal recycling",
+      "actual": "Highest recorded dioxin levels in free-range chicken eggs; PCB and toxic plastic chemicals",
+      "gap": "Open burning of e-waste; soil and food contamination",
+      "financial_impact": {"loss_usd": 200000000, "description": "Health and soil damage", "formula": "Remediation + health"},
       "solutions": [
-        {"name": "Dust suppression", "type": "Fast", "effect": "Reduce PM", "cost": "$10M"},
-        {"name": "Slag heap remediation", "type": "Long", "effect": "Restore land", "cost": "$60M"}
+        {"name": "Formal recycling facility", "type": "Medium", "effect": "Safe processing", "cost": "$30M"},
+        {"name": "Soil remediation", "type": "Long", "effect": "Remove POPs", "cost": "$50M"}
       ],
-      "sources": ["EITI Kazakhstan", "Sentinel-5P"], "companies": ["ArcelorMittal Temirtau"],
-      "documents": []
+      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["Informal sector"],
+      "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
-    "balkhash-copper": {
-      "title": "Balkhash Copper Smelter — Kazakhstan",
-      "country": "Kazakhstan", "region": "Central Asia", "lat": 46.84, "lon": 74.99, "status": "red",
-      "claimed": "Modernization",
-      "actual": "SO₂ emissions, heavy metals in soil",
+    "lake-charles-dioxin": {
+      "title": "Lake Charles Dioxin Contamination — USA",
+      "country": "USA", "region": "North America", "lat": 30.23, "lon": -93.22, "status": "red",
+      "claimed": "Industrial zone",
+      "actual": "Chemical and oil industry dumping; high POPs in blood and chicken eggs",
       "gap": "Legacy contamination",
-      "financial_impact": {"loss_usd": 500000000, "description": "Health and lake damage", "formula": "SO₂ + heavy metals"},
+      "financial_impact": {"loss_usd": 300000000, "description": "Health and remediation", "formula": "Cleanup + health"},
       "solutions": [
-        {"name": "Sulfuric acid plant", "type": "Medium", "effect": "Capture SO₂", "cost": "$100M"},
-        {"name": "Soil remediation", "type": "Long", "effect": "Remove heavy metals", "cost": "$150M"}
+        {"name": "Soil remediation", "type": "Medium", "effect": "Remove dioxins", "cost": "$100M"}
       ],
-      "sources": ["EITI Kazakhstan", "Sentinel-5P"], "companies": ["Kazakhmys"],
+      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["Various chemical/oil"],
+      "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
+    },
+    "3m-pfas-antwerp": {
+      "title": "3M PFAS Contamination — Antwerp, Belgium",
+      "country": "Belgium", "region": "Europe", "lat": 51.22, "lon": 4.40, "status": "red",
+      "claimed": "Production site",
+      "actual": "PFAS pollution of air, groundwater, farms; all screened residents had PFAS in blood",
+      "gap": "Widespread contamination",
+      "financial_impact": {"loss_usd": 500000000, "description": "Health and cleanup", "formula": "PFAS remediation + health monitoring"},
+      "solutions": [
+        {"name": "PFAS filtration", "type": "Medium", "effect": "Clean water", "cost": "$200M"},
+        {"name": "Soil remediation", "type": "Long", "effect": "Remove PFAS", "cost": "$300M"}
+      ],
+      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["3M"],
+      "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
+    },
+    "anaconda-smelter": {
+      "title": "Anaconda Copper Smelter — Montana, USA",
+      "country": "USA", "region": "North America", "lat": 46.13, "lon": -112.95, "status": "red",
+      "claimed": "Historical smelting (closed)",
+      "actual": "Soil contamination over 300 km²; arsenic, copper, lead, zinc in soils",
+      "gap": "Legacy contamination",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Remediation and health", "formula": "Superfund cleanup"},
+      "solutions": [
+        {"name": "Soil remediation", "type": "Long", "effect": "Remove heavy metals", "cost": "$500M"}
+      ],
+      "sources": ["ACS Publications [citation:15]"], "companies": ["Anaconda Copper"],
       "documents": []
     },
-    "tajikistan-aluminium": {
-      "title": "TALCO Aluminium Smelter — Tajikistan",
-      "country": "Tajikistan", "region": "Central Asia", "lat": 37.85, "lon": 68.78, "status": "red",
-      "claimed": "Environmental compliance",
-      "actual": "HF and SO₂ emissions; fluoride contamination",
-      "gap": "Underreported",
-      "financial_impact": {"loss_usd": 200000000, "description": "Health and crop damage", "formula": "HF damage + remediation"},
+    "clark-fork-tailings": {
+      "title": "Clark Fork Tailings Complex — Montana, USA",
+      "country": "USA", "region": "North America", "lat": 47.0, "lon": -114.0, "status": "red",
+      "claimed": "Mining legacy",
+      "actual": "35 km² of tailings ponds; 200 million m³; 9,000 MT arsenic, 90,000 MT copper",
+      "gap": "Massive tailings contamination",
+      "financial_impact": {"loss_usd": 2000000000, "description": "River and soil contamination", "formula": "Remediation"},
       "solutions": [
-        {"name": "Dry scrubbers", "type": "Fast", "effect": "Capture HF", "cost": "$30M"},
-        {"name": "Fluoride soil remediation", "type": "Long", "effect": "Restore land", "cost": "$50M"}
+        {"name": "Tailings containment", "type": "Long", "effect": "Prevent spread", "cost": "$1B"}
       ],
-      "sources": ["UNECE", "Sentinel-5P"], "companies": ["TALCO"],
+      "sources": ["ACS Publications [citation:15]"], "companies": ["Various mining"],
       "documents": []
     },
-    "chimkent-phosphorus": {
-      "title": "Chimkent Phosphorus Plant — Kazakhstan",
-      "country": "Kazakhstan", "region": "Central Asia", "lat": 42.32, "lon": 69.59, "status": "red",
-      "claimed": "Managed waste",
-      "actual": "Phosphogypsum stacks, fluoride emissions",
-      "gap": "Legacy waste",
-      "financial_impact": {"loss_usd": 300000000, "description": "Soil and water contamination", "formula": "Phosphogypsum remediation"},
+    "china-steel-hebei": {
+      "title": "Hebei Steel Cluster — China",
+      "country": "China", "region": "Asia", "lat": 38.0, "lon": 114.5, "status": "red",
+      "claimed": "Ultra-low emission standards",
+      "actual": "China accounts for major share of global steel health impacts; PM2.5 and SO₂ from coking/sintering",
+      "gap": "Scale of production vs abatement",
+      "financial_impact": {"loss_usd": 10000000000, "description": "Health impacts from PM2.5", "formula": "Health damage across cluster"},
       "solutions": [
-        {"name": "Stack capping", "type": "Fast", "effect": "Prevent dust", "cost": "$20M"},
-        {"name": "Phosphogypsum recycling", "type": "Medium", "effect": "Reuse waste", "cost": "$60M"}
+        {"name": "Advanced flue gas treatment", "type": "Medium", "effect": "Reduce SO₂/NOx", "cost": "$5B"},
+        {"name": "Capacity reduction", "type": "Long", "effect": "Lower total emissions", "cost": "Policy"}
       ],
-      "sources": ["EITI Kazakhstan", "Sentinel-2"], "companies": ["Kazphosphate"],
+      "sources": ["Nature Scientific Reports [citation:14]"], "companies": ["Various steel mills"],
       "documents": []
     },
-    "uzbekistan-chemical": {
-      "title": "Navoiyazot Chemical Plant — Uzbekistan",
-      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.10, "lon": 65.37, "status": "red",
+    "china-cement-cluster": {
+      "title": "China Cement Industry — National",
+      "country": "China", "region": "Asia", "lat": 35.0, "lon": 110.0, "status": "red",
+      "claimed": "State-of-the-art ESPs/baghouses",
+      "actual": "Highest share of global cement plant health impacts due to number and size",
+      "gap": "CO₂ from calcination (2/3 of emissions)",
+      "financial_impact": {"loss_usd": 20000000000, "description": "Health and climate", "formula": "PM/NOx + CO₂"},
+      "solutions": [
+        {"name": "Carbon capture", "type": "Long", "effect": "Reduce CO₂", "cost": "$10B"},
+        {"name": "Clinker substitution", "type": "Medium", "effect": "Lower CO₂", "cost": "$2B"}
+      ],
+      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "documents": []
+    },
+    "india-steel-odisha": {
+      "title": "Odisha Steel Cluster — India",
+      "country": "India", "region": "Asia", "lat": 20.3, "lon": 85.8, "status": "red",
+      "claimed": "Growing production",
+      "actual": "Steel production shifting to developing countries; high population density increases health impacts",
+      "gap": "Lower emission standards + high exposure",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Health impacts", "formula": "PM2.5 damage"},
+      "solutions": [
+        {"name": "Advanced abatement", "type": "Medium", "effect": "Reduce PM/SO₂", "cost": "$2B"}
+      ],
+      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "documents": []
+    },
+    "germany-ruhr-steel": {
+      "title": "Ruhr Steel Cluster — Germany",
+      "country": "Germany", "region": "Europe", "lat": 51.5, "lon": 7.0, "status": "red",
+      "claimed": "Green steel transition",
+      "actual": "Legacy steel mills near large populations; coking/sintering emissions",
+      "gap": "Transition pace",
+      "financial_impact": {"loss_usd": 2000000000, "description": "Health impacts", "formula": "PM/SO₂ damage"},
+      "solutions": [
+        {"name": "Hydrogen-based steel", "type": "Long", "effect": "Zero-carbon steel", "cost": "$5B"}
+      ],
+      "sources": ["Nature Scientific Reports "], "companies": ["ThyssenKrupp et al."],
+      "documents": []
+    },
+    "usa-rust-belt": {
+      "title": "US Rust Belt Steel Mills — USA",
+      "country": "USA", "region": "North America", "lat": 41.5, "lon": -81.7, "status": "red",
+      "claimed": "Stagnating production",
+      "actual": "Legacy mills near cities; coking plant emissions",
+      "gap": "Aging infrastructure",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Health impacts", "formula": "PM/SO₂ damage"},
+      "solutions": [
+        {"name": "Retrofit abatement", "type": "Medium", "effect": "Reduce emissions", "cost": "$1B"}
+      ],
+      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "documents": []
+    },
+    "russia-cement-old-kilns": {
+      "title": "Old Rotary Kilns — Russia/Italy",
+      "country": "Russia/Italy", "region": "Europe", "lat": 55.0, "lon": 40.0, "status": "red",
       "claimed": "Modernization",
-      "actual": "Ammonia and NOx emissions; nitrate contamination",
-      "gap": "Underreported",
-      "financial_impact": {"loss_usd": 150000000, "description": "Health and water damage", "formula": "NH₃/NOx damage"},
+      "actual": "Older rotary kilns without preheaters/precalciners still in operation",
+      "gap": "Higher emissions per clinker",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Health and climate", "formula": "PM/NOx/CO₂"},
       "solutions": [
-        {"name": "Ammonia scrubbers", "type": "Fast", "effect": "Capture NH₃", "cost": "$25M"},
-        {"name": "Nitrate water treatment", "type": "Medium", "effect": "Clean water", "cost": "$40M"}
+        {"name": "Kiln retrofit", "type": "Medium", "effect": "Improve efficiency", "cost": "$500M"}
       ],
-      "sources": ["UNECE", "Sentinel-5P"], "companies": ["Navoiyazot"],
+      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
       "documents": []
     },
-    "kyrgyzstan-gold": {
-      "title": "Kumtor Gold Mine — Kyrgyzstan",
-      "country": "Kyrgyzstan", "region": "Central Asia", "lat": 41.87, "lon": 78.18, "status": "red",
-      "claimed": "Environmental safety",
-      "actual": "Cyanide and heavy metal risk; glacier retreat impact",
-      "gap": "High-altitude contamination risk",
-      "financial_impact": {"loss_usd": 250000000, "description": "Water and ecosystem risk", "formula": "Cyanide spill potential"},
+    "global-pops-sites": {
+      "title": "POPs Contaminated Sites — Global (70+ mapped)",
+      "country": "Global", "region": "Global", "lat": 0.0, "lon": 0.0, "status": "red",
+      "claimed": "Various",
+      "actual": "70+ mapped sites (pesticides, PCBs, PFAS, dioxins); tens of thousands estimated globally",
+      "gap": "Unremediated legacy contamination",
+      "financial_impact": {"loss_usd": 50000000000, "description": "Global health and cleanup", "formula": "Aggregate remediation estimate"},
       "solutions": [
-        {"name": "Tailings dam monitoring", "type": "Fast", "effect": "Prevent spills", "cost": "$10M"},
-        {"name": "Cyanide destruction", "type": "Medium", "effect": "Neutralize waste", "cost": "$30M"}
+        {"name": "Global remediation fund", "type": "Long", "effect": "Clean up priority sites", "cost": "$10B"}
       ],
-      "sources": ["UNECE", "Sentinel-1"], "companies": ["Centerra Gold"],
-      "documents": []
+      "sources": ["IPEN/Arnika [citation:4][citation:10]"], "companies": ["Various"],
+      "documents": [{"name": "IPEN Global Map", "url": "https://ipen.org/yue/global-map-selected-pops-contaminated-sites/"}]
     },
-    "turkmenistan-cement": {
-      "title": "Keleli Cement Plant — Turkmenistan",
-      "country": "Turkmenistan", "region": "Central Asia", "lat": 40.30, "lon": 58.50, "status": "red",
-      "claimed": "Modern plant",
-      "actual": "PM and NOx emissions; CO₂ from clinker",
-      "gap": "Underreported",
-      "financial_impact": {"loss_usd": 80000000, "description": "Health and crop damage", "formula": "PM/NOx damage"},
+    "tailings-dam-risk": {
+      "title": "Mining Tailings Dams — Global Risk",
+      "country": "Global", "region": "Global", "lat": 0.0, "lon": 0.0, "status": "red",
+      "claimed": "Safety standards",
+      "actual": "Recurrent catastrophic failures; liquefaction of contractive materials",
+      "gap": "Weak regulatory enforcement",
+      "financial_impact": {"loss_usd": 30000000000, "description": "Dam failure consequences", "formula": "Historical failure costs"},
       "solutions": [
-        {"name": "Baghouse filters", "type": "Fast", "effect": "Reduce PM", "cost": "$10M"}
+        {"name": "Independent dam monitoring", "type": "Fast", "effect": "Early warning", "cost": "$1B"},
+        {"name": "Dry stack tailings", "type": "Medium", "effect": "Reduce failure risk", "cost": "$5B"}
       ],
-      "sources": ["Sentinel-5P"], "companies": ["Turkmencement"],
-      "documents": []
-    },
-    "fergana-chemical": {
-      "title": "Fergana Chemical Plant — Uzbekistan",
-      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.38, "lon": 71.78, "status": "red",
-      "claimed": "Managed",
-      "actual": "Pesticide and chemical waste; soil contamination",
-      "gap": "Legacy waste",
-      "financial_impact": {"loss_usd": 100000000, "description": "Soil and water contamination", "formula": "Remediation costs"},
-      "solutions": [
-        {"name": "Waste inventory", "type": "Fast", "effect": "Know the scale", "cost": "$5M"},
-        {"name": "Soil remediation", "type": "Long", "effect": "Restore land", "cost": "$40M"}
-      ],
-      "sources": ["UNECE", "Sentinel-2"], "companies": ["Fergana Chemical"],
+      "sources": ["Scilit review [citation:11]"], "companies": ["Various mining"],
       "documents": []
     }
   }
