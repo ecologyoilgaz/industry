@@ -1,5 +1,5 @@
 {
-  "meta": {"count": 15, "updated": "2026-11-16", "currency": "USD", "note": "15 confirmed objects; 85+ placeholder regions to be detailed"},
+  "meta": {"count": 15, "updated": "2026-11-16", "currency": "USD"},
   "objects": {
     "norilsk-nickel": {
       "title": "Norilsk Nickel Smelter — Russia",
@@ -12,7 +12,7 @@
         {"name": "Sulfur capture and processing", "type": "Medium", "effect": "Reduce SO₂ by 90%", "cost": "$2B"},
         {"name": "Forest restoration", "type": "Long", "effect": "Rehabilitate 5.9M acres", "cost": "$500M"}
       ],
-      "sources": ["NASA/Environment Canada monitoring", "Inside Climate News [citation:3]"], "companies": ["Norilsk Nickel"],
+      "sources": ["NASA/Environment Canada monitoring", "Inside Climate News"], "companies": ["Norilsk Nickel"],
       "documents": [{"name": "Inside Climate News Report", "url": "https://insideclimatenews.org/news/28112021/norilsk-nickel-russia-pollution/"}]
     },
     "bien-hoa-agent-orange": {
@@ -26,7 +26,7 @@
         {"name": "Thermal desorption", "type": "Medium", "effect": "Destroy dioxin", "cost": "$183M"},
         {"name": "Health monitoring", "type": "Fast", "effect": "Track exposure", "cost": "$10M"}
       ],
-      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["US Military (legacy)"],
+      "sources": ["IPEN/Arnika map"], "companies": ["US Military (legacy)"],
       "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
     "accra-e-waste": {
@@ -40,7 +40,7 @@
         {"name": "Formal recycling facility", "type": "Medium", "effect": "Safe processing", "cost": "$30M"},
         {"name": "Soil remediation", "type": "Long", "effect": "Remove POPs", "cost": "$50M"}
       ],
-      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["Informal sector"],
+      "sources": ["IPEN/Arnika map"], "companies": ["Informal sector"],
       "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
     "lake-charles-dioxin": {
@@ -53,7 +53,7 @@
       "solutions": [
         {"name": "Soil remediation", "type": "Medium", "effect": "Remove dioxins", "cost": "$100M"}
       ],
-      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["Various chemical/oil"],
+      "sources": ["IPEN/Arnika map"], "companies": ["Various chemical/oil"],
       "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
     "3m-pfas-antwerp": {
@@ -67,7 +67,7 @@
         {"name": "PFAS filtration", "type": "Medium", "effect": "Clean water", "cost": "$200M"},
         {"name": "Soil remediation", "type": "Long", "effect": "Remove PFAS", "cost": "$300M"}
       ],
-      "sources": ["IPEN/Arnika map [citation:4]"], "companies": ["3M"],
+      "sources": ["IPEN/Arnika map"], "companies": ["3M"],
       "documents": [{"name": "Arnika POPs Map", "url": "https://arnika.org/en/news/map-highlights-ongoing-health-threats-from-pops-contaminated-sites-globally"}]
     },
     "anaconda-smelter": {
@@ -80,7 +80,7 @@
       "solutions": [
         {"name": "Soil remediation", "type": "Long", "effect": "Remove heavy metals", "cost": "$500M"}
       ],
-      "sources": ["ACS Publications [citation:15]"], "companies": ["Anaconda Copper"],
+      "sources": ["ACS Publications"], "companies": ["Anaconda Copper"],
       "documents": []
     },
     "clark-fork-tailings": {
@@ -93,7 +93,7 @@
       "solutions": [
         {"name": "Tailings containment", "type": "Long", "effect": "Prevent spread", "cost": "$1B"}
       ],
-      "sources": ["ACS Publications [citation:15]"], "companies": ["Various mining"],
+      "sources": ["ACS Publications"], "companies": ["Various mining"],
       "documents": []
     },
     "china-steel-hebei": {
@@ -107,7 +107,7 @@
         {"name": "Advanced flue gas treatment", "type": "Medium", "effect": "Reduce SO₂/NOx", "cost": "$5B"},
         {"name": "Capacity reduction", "type": "Long", "effect": "Lower total emissions", "cost": "Policy"}
       ],
-      "sources": ["Nature Scientific Reports [citation:14]"], "companies": ["Various steel mills"],
+      "sources": ["Nature Scientific Reports"], "companies": ["Various steel mills"],
       "documents": []
     },
     "china-cement-cluster": {
@@ -121,7 +121,7 @@
         {"name": "Carbon capture", "type": "Long", "effect": "Reduce CO₂", "cost": "$10B"},
         {"name": "Clinker substitution", "type": "Medium", "effect": "Lower CO₂", "cost": "$2B"}
       ],
-      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "sources": ["Nature Scientific Reports"], "companies": ["Various"],
       "documents": []
     },
     "india-steel-odisha": {
@@ -134,7 +134,7 @@
       "solutions": [
         {"name": "Advanced abatement", "type": "Medium", "effect": "Reduce PM/SO₂", "cost": "$2B"}
       ],
-      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "sources": ["Nature Scientific Reports"], "companies": ["Various"],
       "documents": []
     },
     "germany-ruhr-steel": {
@@ -147,7 +147,7 @@
       "solutions": [
         {"name": "Hydrogen-based steel", "type": "Long", "effect": "Zero-carbon steel", "cost": "$5B"}
       ],
-      "sources": ["Nature Scientific Reports "], "companies": ["ThyssenKrupp et al."],
+      "sources": ["Nature Scientific Reports"], "companies": ["ThyssenKrupp et al."],
       "documents": []
     },
     "usa-rust-belt": {
@@ -160,7 +160,7 @@
       "solutions": [
         {"name": "Retrofit abatement", "type": "Medium", "effect": "Reduce emissions", "cost": "$1B"}
       ],
-      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "sources": ["Nature Scientific Reports"], "companies": ["Various"],
       "documents": []
     },
     "russia-cement-old-kilns": {
@@ -173,7 +173,7 @@
       "solutions": [
         {"name": "Kiln retrofit", "type": "Medium", "effect": "Improve efficiency", "cost": "$500M"}
       ],
-      "sources": ["Nature Scientific Reports "], "companies": ["Various"],
+      "sources": ["Nature Scientific Reports"], "companies": ["Various"],
       "documents": []
     },
     "global-pops-sites": {
@@ -186,7 +186,7 @@
       "solutions": [
         {"name": "Global remediation fund", "type": "Long", "effect": "Clean up priority sites", "cost": "$10B"}
       ],
-      "sources": ["IPEN/Arnika [citation:4][citation:10]"], "companies": ["Various"],
+      "sources": ["IPEN/Arnika"], "companies": ["Various"],
       "documents": [{"name": "IPEN Global Map", "url": "https://ipen.org/yue/global-map-selected-pops-contaminated-sites/"}]
     },
     "tailings-dam-risk": {
@@ -200,7 +200,7 @@
         {"name": "Independent dam monitoring", "type": "Fast", "effect": "Early warning", "cost": "$1B"},
         {"name": "Dry stack tailings", "type": "Medium", "effect": "Reduce failure risk", "cost": "$5B"}
       ],
-      "sources": ["Scilit review [citation:11]"], "companies": ["Various mining"],
+      "sources": ["Scilit review"], "companies": ["Various mining"],
       "documents": []
     }
   }
