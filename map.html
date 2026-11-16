@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Map — Industry Ecology</title>
+<title>Map — Water Ecology</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <div class="logo"><img src="industry-logo.png" alt="Logo"> Industry Ecology Map</div>
+  <div class="logo"><img src="logo-header.png" alt="Logo"> Water Ecology Map</div>
   <nav>
     <a href="index.html">Home</a>
     <a href="map.html" class="active">Map</a>
@@ -23,7 +23,7 @@
   </nav>
 </header>
 <main>
-  <h1>Global Industry Map</h1>
+  <h1>Global Water Map</h1>
   <div class="legend">
     <span><i class="dot red"></i> Gap</span><span><i class="dot green"></i> Verified</span><span><i class="dot gray"></i> Pending</span>
   </div>
@@ -38,22 +38,7 @@
   </p>
 </footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-async function renderMap() {
-  const res = await fetch('objects.json');
-  const data = await res.json();
-  const OBJECTS = data.objects || data;
-  if (!document.getElementById('map')) return;
-  const map = L.map('map').setView([25, 15], 2);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'© OpenStreetMap'}).addTo(map);
-  Object.entries(OBJECTS).forEach(([id, o]) => {
-    const color = o.status === 'red' ? '#FF4D4D' : o.status === 'green' ? '#4DFF88' : '#8A94C8';
-    L.circleMarker([o.lat || 0, o.lon || 0], {radius: 8, color: color, fillOpacity: 0.8, weight: 2})
-      .addTo(map)
-      .bindPopup(`<b>${o.title}</b><br>${o.country}<br><a href="object.html?id=${id}">Details →</a>`);
-  });
-}
-document.addEventListener('DOMContentLoaded', renderMap);
-</script>
+<script src="app.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => setTimeout(renderMap, 500));</script>
 </body>
 </html>
