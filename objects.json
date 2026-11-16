@@ -1,5 +1,5 @@
 {
-  "meta": {"count": 15, "updated": "2026-11-16", "currency": "USD"},
+  "meta": {"count": 25, "updated": "2026-11-16", "currency": "USD"},
   "objects": {
     "norilsk-nickel": {
       "title": "Norilsk Nickel Smelter — Russia",
@@ -202,6 +202,146 @@
       ],
       "sources": ["Scilit review"], "companies": ["Various mining"],
       "documents": []
+    },
+
+    "navoiy-smelter": {
+      "title": "Navoiy Mining & Metallurgy — Uzbekistan",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.08, "lon": 65.38, "status": "red",
+      "claimed": "Modernization and environmental compliance",
+      "actual": "SO₂ emissions, dust, tailings contamination",
+      "gap": "Underreported emissions; legacy tailings",
+      "financial_impact": {"loss_usd": 350000000, "description": "Health and agriculture damage", "formula": "SO₂ + PM damage + remediation"},
+      "solutions": [
+        {"name": "Install SO₂ scrubbers", "type": "Fast", "effect": "Reduce SO₂ by 80%", "cost": "$40M"},
+        {"name": "Tailings containment", "type": "Medium", "effect": "Prevent groundwater contamination", "cost": "$80M"}
+      ],
+      "sources": ["UNECE", "Sentinel-5P"], "companies": ["Navoiy MMC"],
+      "documents": [{"name": "Full Report", "url": "report-navoiy-smelter.html"}]
+    },
+    "bekabad-cement": {
+      "title": "Bekabad Cement Plant — Uzbekistan",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.22, "lon": 69.33, "status": "red",
+      "claimed": "Modern kilns, low dust",
+      "actual": "PM2.5 and NOx above limits; CO₂ from clinker",
+      "gap": "Underreported PM/NOx",
+      "financial_impact": {"loss_usd": 120000000, "description": "Health and crop damage", "formula": "PM/NOx damage costs"},
+      "solutions": [
+        {"name": "Baghouse filters", "type": "Fast", "effect": "Reduce PM by 90%", "cost": "$15M"},
+        {"name": "Alternative fuels (RDF)", "type": "Medium", "effect": "Cut CO₂ by 20%", "cost": "$25M"}
+      ],
+      "sources": ["Rosprirodnadzor", "Sentinel-5P"], "companies": ["Bekabadcement"],
+      "documents": [{"name": "Full Report", "url": "report-bekabad-cement.html"}]
+    },
+    "karaganda-steel": {
+      "title": "Karaganda Steelworks — Kazakhstan",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 49.88, "lon": 73.10, "status": "red",
+      "claimed": "Environmental program",
+      "actual": "SO₂, NOx, dust; legacy slag heaps",
+      "gap": "Underreported emissions",
+      "financial_impact": {"loss_usd": 400000000, "description": "Health and soil damage", "formula": "PM/SO₂ damage + remediation"},
+      "solutions": [
+        {"name": "Dust suppression", "type": "Fast", "effect": "Reduce PM", "cost": "$10M"},
+        {"name": "Slag heap remediation", "type": "Long", "effect": "Restore land", "cost": "$60M"}
+      ],
+      "sources": ["EITI Kazakhstan", "Sentinel-5P"], "companies": ["ArcelorMittal Temirtau"],
+      "documents": [{"name": "Full Report", "url": "report-karaganda-steel.html"}]
+    },
+    "balkhash-copper": {
+      "title": "Balkhash Copper Smelter — Kazakhstan",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 46.84, "lon": 74.99, "status": "red",
+      "claimed": "Modernization",
+      "actual": "SO₂ emissions, heavy metals in soil",
+      "gap": "Legacy contamination",
+      "financial_impact": {"loss_usd": 500000000, "description": "Health and lake damage", "formula": "SO₂ + heavy metals"},
+      "solutions": [
+        {"name": "Sulfuric acid plant", "type": "Medium", "effect": "Capture SO₂", "cost": "$100M"},
+        {"name": "Soil remediation", "type": "Long", "effect": "Remove heavy metals", "cost": "$150M"}
+      ],
+      "sources": ["EITI Kazakhstan", "Sentinel-5P"], "companies": ["Kazakhmys"],
+      "documents": [{"name": "Full Report", "url": "report-balkhash-copper.html"}]
+    },
+    "tajikistan-aluminium": {
+      "title": "TALCO Aluminium Smelter — Tajikistan",
+      "country": "Tajikistan", "region": "Central Asia", "lat": 37.85, "lon": 68.78, "status": "red",
+      "claimed": "Environmental compliance",
+      "actual": "HF and SO₂ emissions; fluoride contamination",
+      "gap": "Underreported",
+      "financial_impact": {"loss_usd": 200000000, "description": "Health and crop damage", "formula": "HF damage + remediation"},
+      "solutions": [
+        {"name": "Dry scrubbers", "type": "Fast", "effect": "Capture HF", "cost": "$30M"},
+        {"name": "Fluoride soil remediation", "type": "Long", "effect": "Restore land", "cost": "$50M"}
+      ],
+      "sources": ["UNECE", "Sentinel-5P"], "companies": ["TALCO"],
+      "documents": [{"name": "Full Report", "url": "report-talco-aluminium.html"}]
+    },
+    "kyrgyzstan-gold": {
+      "title": "Kumtor Gold Mine — Kyrgyzstan",
+      "country": "Kyrgyzstan", "region": "Central Asia", "lat": 41.87, "lon": 78.18, "status": "red",
+      "claimed": "Environmental safety",
+      "actual": "Cyanide and heavy metal risk; glacier retreat impact",
+      "gap": "High-altitude contamination risk",
+      "financial_impact": {"loss_usd": 250000000, "description": "Water and ecosystem risk", "formula": "Cyanide spill potential"},
+      "solutions": [
+        {"name": "Tailings dam monitoring", "type": "Fast", "effect": "Prevent spills", "cost": "$10M"},
+        {"name": "Cyanide destruction", "type": "Medium", "effect": "Neutralize waste", "cost": "$30M"}
+      ],
+      "sources": ["UNECE", "Sentinel-1"], "companies": ["Centerra Gold"],
+      "documents": [{"name": "Full Report", "url": "report-kumtor-gold.html"}]
+    },
+    "turkmenistan-cement": {
+      "title": "Keleli Cement Plant — Turkmenistan",
+      "country": "Turkmenistan", "region": "Central Asia", "lat": 40.30, "lon": 58.50, "status": "red",
+      "claimed": "Modern plant",
+      "actual": "PM and NOx emissions; CO₂ from clinker",
+      "gap": "Underreported",
+      "financial_impact": {"loss_usd": 80000000, "description": "Health and crop damage", "formula": "PM/NOx damage"},
+      "solutions": [
+        {"name": "Baghouse filters", "type": "Fast", "effect": "Reduce PM", "cost": "$10M"}
+      ],
+      "sources": ["Sentinel-5P"], "companies": ["Turkmencement"],
+      "documents": [{"name": "Full Report", "url": "report-turkmenistan-cement.html"}]
+    },
+    "fergana-chemical": {
+      "title": "Fergana Chemical Plant — Uzbekistan",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.38, "lon": 71.78, "status": "red",
+      "claimed": "Managed",
+      "actual": "Pesticide and chemical waste; soil contamination",
+      "gap": "Legacy waste",
+      "financial_impact": {"loss_usd": 100000000, "description": "Soil and water contamination", "formula": "Remediation costs"},
+      "solutions": [
+        {"name": "Waste inventory", "type": "Fast", "effect": "Know the scale", "cost": "$5M"},
+        {"name": "Soil remediation", "type": "Long", "effect": "Restore land", "cost": "$40M"}
+      ],
+      "sources": ["UNECE", "Sentinel-2"], "companies": ["Fergana Chemical"],
+      "documents": [{"name": "Full Report", "url": "report-fergana-chemical.html"}]
+    },
+    "chimkent-phosphorus": {
+      "title": "Chimkent Phosphorus Plant — Kazakhstan",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 42.32, "lon": 69.59, "status": "red",
+      "claimed": "Managed waste",
+      "actual": "Phosphogypsum stacks, fluoride emissions",
+      "gap": "Legacy waste",
+      "financial_impact": {"loss_usd": 300000000, "description": "Soil and water contamination", "formula": "Phosphogypsum remediation"},
+      "solutions": [
+        {"name": "Stack capping", "type": "Fast", "effect": "Prevent dust", "cost": "$20M"},
+        {"name": "Phosphogypsum recycling", "type": "Medium", "effect": "Reuse waste", "cost": "$60M"}
+      ],
+      "sources": ["EITI Kazakhstan", "Sentinel-2"], "companies": ["Kazphosphate"],
+      "documents": [{"name": "Full Report", "url": "report-chimkent-phosphorus.html"}]
+    },
+    "uzbekistan-chemical": {
+      "title": "Navoiyazot Chemical Plant — Uzbekistan",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.10, "lon": 65.37, "status": "red",
+      "claimed": "Modernization",
+      "actual": "Ammonia and NOx emissions; nitrate contamination",
+      "gap": "Underreported",
+      "financial_impact": {"loss_usd": 150000000, "description": "Health and water damage", "formula": "NH₃/NOx damage"},
+      "solutions": [
+        {"name": "Ammonia scrubbers", "type": "Fast", "effect": "Capture NH₃", "cost": "$25M"},
+        {"name": "Nitrate water treatment", "type": "Medium", "effect": "Clean water", "cost": "$40M"}
+      ],
+      "sources": ["UNECE", "Sentinel-5P"], "companies": ["Navoiyazot"],
+      "documents": [{"name": "Full Report", "url": "report-navoiyazot.html"}]
     }
   }
 }
